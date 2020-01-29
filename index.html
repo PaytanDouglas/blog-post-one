@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>blog-boilerplate</title>
     <style>
-      body {width:82%; margin:1em auto; background:#ececec; font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; line-height:1.5; font-size:18px;}
-      .step {background:#fafafa; margin:1em; padding:1em; border:1px solid #e0e0e0; border-radius:4px;}
-      code {background:#e0e0e0; padding:.2em .5em .2em .5em;}
-      h3 {margin-bottom:0; padding-bottom:0;}
+      body {width:82%; margin:1em auto; background:#62566E; font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; line-height:1.5; font-size:18px; color:#FFD4FA;}
+      .step {background:#E4C7FF; margin:1em; padding:1em; border:10px solid #CF5F86; border-radius:4px;}
+      code {background:#333; color:#D1A6FF; padding:.2em .5em .2em .5em;}
+      h3 {margin-bottom:0; padding-bottom:0; color:#8A54B8;}
       p:first-child {padding-top:0; margin-top:0;}
       img {width:100%; height:auto;}
       .grid-container {padding:10px; margin:10px; display: grid; grid-row-gap: 10px; grid-template-areas:
-        "1" "2" "3" "4";
+        "one two" "three four";
       }
-      @media (max-width:787px) {
-        .grid-container {grid-template-areas: "1 2" "3 4";}
-      }
+      .one {color:#FF6866;}
+      .two {color:#FF6866;}
+      .three {color:#FF6866;}
+      .four {color:#FF6866;}
+      @media (max-width:1000px) {.grid-container {grid-template-areas: "one" "two" "three" "four";}}
     </style>
   </head>
   <body>
@@ -26,7 +28,7 @@
     <pre><code>This is some more chunky code</code></pre>
 
     <div class="grid-container">
-      <div class="1">
+      <div class="one step">
         <h3>Step 1: Logging into your terminal.</h3>
         <ol>
           <li>Step one</li>
@@ -35,7 +37,7 @@
         </ol>
       </div>
 
-      <div class="2">
+      <div class="two step">
         <h3 id="step-2-doing-something-else-">Step 2: Doing something else.</h3>
         <ul>
           <li>Step four</li>
@@ -45,7 +47,7 @@
         </ul>
       </div>
 
-      <div class="3">
+      <div class="three step">
         <h3 id="step-3-doing-another-thing-">Step 3: Doing another thing.</h3>
         <ol>
           <li>Step seven</li>
@@ -54,7 +56,7 @@
         </ol>
       </div>
 
-      <div class="4">
+      <div class="four step">
         <h3 id="step-4-doing-the-almost-dones-">Step 4: Doing the almost dones.</h3>
         <ul>
           <li>Step ten</li>
