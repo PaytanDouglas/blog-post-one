@@ -15,17 +15,14 @@
       .grid-container {padding:10px; margin:10px; display: grid; grid-row-gap: 10px; grid-template-areas:
         "one two" "three four";
       }
-      .one {color:#FF6866;}
-      .two {color:#FF6866;}
-      .three {color:#FF6866;}
-      .four {color:#FF6866;}
+      .one, .two, .three, .four {color:#FF6866;}
       @media (max-width:1000px) {.grid-container {grid-template-areas: "one" "two" "three" "four";}}
     </style>
   </head>
   <body>
-    <h1>Setting up a project on a remote server using ssh and the command line interface.</h1>
-    <h6>This project is supposed to teach you how to do the thing. You should read this blog post because of x, y, and z.</h6>
-    <p><strong><em>Before you begin</em></strong>: This blog post should only be read <strong><em>after</em></strong> you know how to log into your terminal, and are familiar with basic Linux commands.</p>
+    <h1>Scafolding a project on a remote server using SSH and the command line interface.</h1>
+    <h6>This post is going to teach you how to create a project with multiple files on a remote server. You should read this blog post if you have a remote server you can access, files you want to start on that server, and are at least somewhat comfortable with SSH and the command line.</h6>
+    <p><strong><em>Before you begin</em></strong>: This blog post should only be read <strong><em>after</em></strong> you have downloaded terminal software on your computer, know how to log into your terminal, and are familiar with basic Linux commands.</p>
     <h6>Some vocab you may need to know:
       <p>SSH - Secure Shell or Secure Socket Shell<br>
       Thing - Definition<br>
