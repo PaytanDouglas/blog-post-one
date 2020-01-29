@@ -5,20 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>blog-boilerplate</title>
     <style>
-    body {width:82%; margin:1em auto; background:#ececec; font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; line-height:1.5; font-size:18px;}
-    .step {background:#fafafa; margin:1em; padding:1em; border:1px solid #e0e0e0; border-radius:4px;}
-    code {background:#e0e0e0; padding:.2em .5em .2em .5em;}
-    h3 {margin-bottom:0; padding-bottom:0;}
-    p:first-child {padding-top:0; margin-top:0;}
-    img {width:100%; height:auto;}
+      body {width:82%; margin:1em auto; background:#ececec; font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; line-height:1.5; font-size:18px;}
+      .step {background:#fafafa; margin:1em; padding:1em; border:1px solid #e0e0e0; border-radius:4px;}
+      code {background:#e0e0e0; padding:.2em .5em .2em .5em;}
+      h3 {margin-bottom:0; padding-bottom:0;}
+      p:first-child {padding-top:0; margin-top:0;}
+      img {width:100%; height:auto;}
+      .grid-container {padding:10px; margin:10px; display: grid; grid-row-gap: 10px; grid-template-areas:
+        "1" "2" "3" "4";
+      }
+      @media (max-width:787px) {
+        .grid-container {grid-template-areas: "1 2" "3 4";}
+      }
     </style>
   </head>
   <body>
-    <!-- Your blog content goes here-->
-    <!-- Don't forget to change the page title -->
-    <!-- You can wrap your steps in a <div> with a class of .step for basic styles-->
-    <!-- Feel free to change the styles as you see fit-->
-    <!-- Please use <pre> and <code> tags properly for commands and code-->
-    <!-- Please delete these comments in your posts :) -->
+    <h1>Setting up a project on a remote server using ssh and the command line interface.</h1>
+    <h6>This project is supposed to teach you how to do the thing. You should read this blog post because of x, y, and z.</h6>
+    <p><strong><em>Before you begin</em></strong>: Tips for <code>some code</code></p>
+    <pre><code>This is some more chunky code</code></pre>
+
+    <div class="grid-container">
+      <div class="1">
+        <h3>Step 1: Logging into your terminal.</h3>
+        <ol>
+          <li>Step one</li>
+          <li>Step two</li>
+          <li>Step three</li>
+        </ol>
+      </div>
+
+      <div class="2">
+        <h3 id="step-2-doing-something-else-">Step 2: Doing something else.</h3>
+        <ul>
+          <li>Step four</li>
+          <li>Step four a</li>
+          <li>Step five</li>
+          <li>Step six</li>
+        </ul>
+      </div>
+
+      <div class="3">
+        <h3 id="step-3-doing-another-thing-">Step 3: Doing another thing.</h3>
+        <ol>
+          <li>Step seven</li>
+          <li>Step eight</li>
+          <li>Step nine</li>
+        </ol>
+      </div>
+
+      <div class="4">
+        <h3 id="step-4-doing-the-almost-dones-">Step 4: Doing the almost dones.</h3>
+        <ul>
+          <li>Step ten</li>
+          <li>Step eleven</li>
+          <li>Step twelve</li>
+        </ul>
+        <p>Then add a <a href="https://google.com">link</a>.</p>
+        <ul>
+          <li>This is <strong>bold</strong></li>
+          <li>This is <em>italic</em></li>
+          <li>This is <strong><em>bold and italic</em></strong></li>
+          <li>This is ~struckthrough~.</li>
+        </ul>
+      </div>
+
+    </div><!--End Grid-->
   </body>
 </html>
