@@ -12,71 +12,71 @@
       h6 p {margin-left: 25px;}
       p:first-child {padding-top:0; margin-top:0;}
       img {width:100%; height:auto;}
-      .grid-container {padding:10px; margin:10px; display: grid; grid-row-gap: 10px; grid-template-areas:
-        "one two" "three four";
+      .grid-container {padding:10px; margin:10px; display: grid; grid-row-gap: 10px; grid-template-columns:1fr; column-width: 50%;
       }
       .one, .two, .three, .four {color:#FF6866;}
-      @media (max-width:1000px) {.grid-container {grid-template-areas: "one" "two" "three" "four";}}
+      #cont {margin-top: 2em; margin-left: 2em;}
+      @media (min-width:768px) {.grid-container {grid-template-columns: repeat(1, 1fr);}}
+      @media (min-width:990px) {.grid-container {grid-template-columns: repeat(2, 1fr);}}
     </style>
   </head>
   <body>
     <h1>Scafolding a project on a remote server using SSH and the command line interface.</h1>
     <h6>This post is going to teach you how to create a project with multiple files on a remote server. You should read this blog post if you have a remote server you can access, files you want to start on that server, and are at least somewhat comfortable with SSH and the command line.</h6>
-    <p><strong><em>Before you begin</em></strong>: This blog post should only be read <strong><em>after</em></strong> you have downloaded terminal software on your computer, know how to log into your terminal, and are familiar with basic Linux commands.</p>
-    <h6>Some vocab you may need to know:
-      <p>SSH - Secure Shell or Secure Socket Shell<br>
+
+    <p><strong><em>Before you begin</em></strong>: This blog post should only be read <strong><em>after</em></strong> you have downloaded terminal software on your computer. This blog post is made for people who are unfamiliar with Linux commands, but <strong><em>are</em></strong> familiar with html commands.</p>
+    <h6>Vocab and basic commands you may need to know:
+      Scafolding - To access a database in order to create, read, edit, or delete database entries<br>
+      mkdir - Make Directory<br>
+      cd - Change Directory<br>
+      Thing - Definition<br>
       Thing - Definition<br>
       Thing - Definition<br>
       Thing - Definition<br>
       Thing - Definition<br>
       </p>
     </h6>
-    <p>Tips for <code>some code</code></p>
-    <pre><code>This is some more chunky code</code></pre>
 
     <div class="grid-container">
       <div class="one step">
         <h3>Step 1: Logging into your terminal.</h3>
-        <ol>
-          <li>Log into your desired host (this is typically an IP address)</li>
-          <li>Step two</li>
-          <li>Step three</li>
-        </ol>
+        <div id="cont">
+          <p>Log into your desired host (this is typically an IP address).</p>
+          <p>Once you enter your username and password for the terminal, the terminal should show <pre><code>your_username@your_server</code></pre> and you can begin scaffolding.</p>
+        </div>
       </div>
 
       <div class="two step">
-        <h3 id="step-2-doing-something-else-">Step 2: Setting up project folders.</h3>
-        <ul>
-          <li>Step four</li>
-          <li>Step four a</li>
-          <li>Step five</li>
-          <li>Step six</li>
-        </ul>
+        <h3>Step 2: Creating a project folder and going to the folder.</h3>
+        <div id="cont">
+          <p>In order to create a new directory, enter the line <pre><code>mkdir desired_directory_name</code></pre> into your terminal.</p>
+
+          <p>This creates a new diretory (similar to a "folder" on your computer).<br/>
+          After the directory is made, you can enter that directory by typing <pre><code>cd desired_directory_name</code></pre> into the terminal.</p>
+        </div>
       </div>
 
       <div class="three step">
-        <h3 id="step-3-doing-another-thing-">Step 3: Creating files (scripts) to put in your project folder.</h3>
-        <ol>
-          <li>Step seven</li>
-          <li>Step eight</li>
-          <li>Step nine</li>
-        </ol>
+        <h3>Step 3: Creating files (scripts) to put in your project folder.</h3>
+        <div id="cont">
+          <p>You may have created html files on a code editor.</p>
+          <p>Step eight</p>
+          <p>Step nine</p>
+        </div>
       </div>
 
       <div class="four step">
-        <h3 id="step-4-doing-the-almost-dones-">Step 4: Running those files.</h3>
-        <ul>
-          <li>Step ten</li>
-          <li>Step eleven</li>
-          <li>Step twelve</li>
-        </ul>
-        <p>Then add a <a href="https://google.com">link</a>.</p>
-        <ul>
-          <li>This is <strong>bold</strong></li>
-          <li>This is <em>italic</em></li>
-          <li>This is <strong><em>bold and italic</em></strong></li>
-          <li>This is ~struckthrough~.</li>
-        </ul>
+        <h3>Step 4: Running those files.</h3>
+        <div id="cont">
+          <p>Step ten</p>
+          <p>Step eleven</p>
+          <p>Step twelve</p>
+          <p>Then add a <a href="https://google.com">link</a>.</p>
+          This is <strong>bold</strong><br/>
+          This is <em>italic</em><br/>
+          This is <strong><em>bold and italic</em></strong><br/>
+          This is .</li>
+        </div>
       </div>
 
     </div><!--End Grid-->
