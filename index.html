@@ -6,18 +6,25 @@
     <title>Blog Post #1</title>
     <style>
       body {width:82%; margin:1em auto; background:#62566E; font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; line-height:1.5; font-size:18px; color:#FFD4FA;}
-      .step {background:#E4C7FF; margin:1em; padding:1em; border:10px solid #CF5F86; border-radius:4px;}
       code {background:#333; color:#D1A6FF; padding:.2em .5em .2em .5em;}
       h3 {margin-bottom:0; padding-bottom:0; color:#8A54B8;}
       h6 p {margin-left: 25px;}
+      tr td {border-bottom: 3px solid red;}
+      table {margin: auto; margin-top:25px; text-align: right;}
+      .term {text-align:left;}
+      .top {text-align: center;}
       p:first-child {padding-top:0; margin-top:0;}
       img {width:100%; height:auto;}
-      .grid-container {padding:10px; margin:10px; display: grid; grid-row-gap: 10px; grid-template-columns:1fr; column-width: 50%;
-      }
+      .step {background:#E4C7FF; margin:1em; padding:1em; border:10px solid #CF5F86; border-radius:4px; transition-duration: 200ms;}
+      .step:hover {transform: scale(1.05); border: 10px #8A54B8 solid; background: #FF6866; color: #E4C7FF; box-shadow: 7px 7px 10px #CF5F86;}
+      .step:hover>h3 {color: #E4C7FF; text-decoration: underline;}
+      .grid-container {padding:10px; margin:10px; display: grid; grid-row-gap: 10px; grid-template-columns:1fr; column-width: 50%;}
       .one, .two, .three, .four {color:#FF6866;}
+      .one, .three {margin-right: 2em;}
+      .two, .four {margin-left: 2em;}
       #cont {margin-top: 2em; margin-left: 2em;}
-      @media (min-width:768px) {.grid-container {grid-template-columns: repeat(1, 1fr);}}
       @media (min-width:990px) {.grid-container {grid-template-columns: repeat(2, 1fr);}}
+      @media (min-width:768px) {.grid-container {grid-template-columns: repeat(1, 1fr);} .one, .two, .three, .four {margin:1em;}}
     </style>
   </head>
   <body>
@@ -25,15 +32,15 @@
     <h6>This post is going to teach you how to create a project with multiple files on a remote server. You should read this blog post if you have a remote server you can access, files you want to start on that server, and are at least somewhat comfortable with SSH and the command line.</h6>
 
     <p><strong><em>Before you begin</em></strong>: This blog post should only be read <strong><em>after</em></strong> you have downloaded terminal software on your computer. This blog post is made for people who are unfamiliar with Linux commands, but <strong><em>are</em></strong> familiar with html commands.</p>
-    <h6>Vocab and basic commands you may need to know:
-      Scafolding - To access a database in order to create, read, edit, or delete database entries<br>
-      mkdir - Make Directory<br>
-      cd - Change Directory<br>
-      Thing - Definition<br>
-      Thing - Definition<br>
-      Thing - Definition<br>
-      Thing - Definition<br>
-      Thing - Definition<br>
+    <h6>Vocab and basic commands you may need to know:<br>
+      <table>
+        <tr class="top"><td>Term</td><td>Definition</td></tr>
+        <tr><td class="term">scafolding</td><td>A framework for ; to create ; to add on to</td></tr>
+        <tr><td class="term">mkdir</td><td>Make Directory</td></tr>
+        <tr><td class="term">cd</td><td>Change Directory</td></tr>
+        <tr><td class="term">touch</td><td>Creates a file ; can be used to update timestamps</td></tr>
+        <tr><td class="term">nano</td><td>Creates a file ; most useful when dealing with configuration files</td></tr>
+      </table>
       </p>
     </h6>
 
@@ -60,22 +67,18 @@
         <h3>Step 3: Creating files (scripts) to put in your project folder.</h3>
         <div id="cont">
           <p>This step assumes you aleady have created html files on a code editor. In order to create a new file for your project, use the command: <pre><code>touch desired_file_name</code></pre></p>
-          <p>Step eight</p>
-          <p>Step nine</p>
+          <p>Once the file is created, you can copy nd paste your code in from your text editor.</p>
+          <p>Finally, you can run your code in step 4.</p>
         </div>
       </div>
 
       <div class="four step">
         <h3>Step 4: Running those files.</h3>
         <div id="cont">
-          <p>Step ten</p>
-          <p>Step eleven</p>
-          <p>Step twelve</p>
-          <p>Then add a <a href="https://google.com">link</a>.</p>
-          This is <strong>bold</strong><br/>
-          This is <em>italic</em><br/>
-          This is <strong><em>bold and italic</em></strong><br/>
-          This is .</li>
+          <p>Everything's led up to this, hasn't it?</p>
+          <p>To run the code from Step 3 from the file you created in Step 2 after logging into your terminal in Step 1 - we're finally here!</p>
+          <p>Type <code>desired_file_name</code> or <code>./desired_file_name</code> into your terminal to see your code work it's magic!</p>
+          <p>And with that hopefully it turned out the way you wanted it to! Good luck coding!</p>
         </div>
       </div>
 
